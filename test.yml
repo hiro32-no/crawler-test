@@ -1,0 +1,20 @@
+name: Crawler Validation
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-view:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Run verification
+        run: |
+          echo "表示テスト"
+          echo "インデントが崩れていないか確認"
+          
+      # ここはコメントです
+      # グレーアウトして表示されるか確認
